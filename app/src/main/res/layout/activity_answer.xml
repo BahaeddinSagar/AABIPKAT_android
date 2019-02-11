@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnswerActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Correct"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/isCorrect"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textSize="15sp"
+        android:text="The National Lung Screening Trial (NLST) compared two ways of detecting lung cancer: low-dose helical computed tomography (CT) and standard chest X-ray. The study found that participants who received low-dose helical CT scans had a 15 to 20% lower risk of dying from lung cancer than participants who received standard chest X-rays. This is equivalent to approximately three fewer deaths per 1 ,000 people screened in the CT group compared to the chest X-ray group over a period of about 7 years of observation. Enrolled patients were current or former smokers with at least a 30 pack year history ages 55 to 74. The use of chest radiograph and sputum cytology for the detection of lung cancer has not been shown to have a positive effect on mortality."
+        android:id="@+id/Explaination"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next Question"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:onClick="NextQuestion"
+        />
+</LinearLayout>

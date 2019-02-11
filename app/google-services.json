@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "525377021665",
+    "firebase_url": "https://aabip-kat.firebaseio.com",
+    "project_id": "aabip-kat",
+    "storage_bucket": "aabip-kat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525377021665:android:380bad3917d9e863",
+        "android_client_info": {
+          "package_name": "ly.bsagar.aabip_kat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525377021665-fgl7sola6736ks4kdmvfmrs0ce55ao79.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ly.bsagar.aabip_kat",
+            "certificate_hash": "c45c767677d09a667fd479f2b432a2a3f97a6bbb"
+          }
+        },
+        {
+          "client_id": "525377021665-akq8596s7hmna9a6ppl1d7cqi59nhpqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoT3Z0JJlObXlFZhxL6A2OoXUU3r9CWWM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525377021665-akq8596s7hmna9a6ppl1d7cqi59nhpqr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "525377021665-nioj8ribtr79js1qgl7obftphb0llvf4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ly.bsagar.AABIPKAT"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

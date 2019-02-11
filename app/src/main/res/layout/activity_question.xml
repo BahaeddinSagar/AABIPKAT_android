@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Question 0"
+        android:id="@+id/QuestionNumber"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="69 years old male, active smoker (h/0 50 pack-year smoking) who was referred to pulmonary clinic for management of COPD is now inquiring about screening for lung cancer 'because it runs in his family' which of the following is TRUE about screening for lung cancer"
+        android:id="@+id/QuestionText"
+        android:textSize="14sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Image"
+        android:enabled="false"
+        android:id="@+id/ViewImage"
+        android:onClick="ShowImage"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AnswerList">
+
+
+    </ListView>
+
+</LinearLayout>
