@@ -2,23 +2,26 @@ package ly.bsagar.aabip_kat;
 
 
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Question {
+public class Question  implements Serializable {
 
-    String imageURL;
-    String Question;
-    String AnswerA;
-    String AnswerB;
-    String AnswerC;
-    String AnswerD;
-    String AnswerE;
-    int CorrectAnswer;
-    String Explination ;
-    ArrayList<String> options;
-    int Index;
+    public String imageURL;
+    public String Question;
+    public String AnswerA;
+    public String AnswerB;
+    public String AnswerC;
+    public String AnswerD;
+    public String AnswerE;
+    public int CorrectAnswer;
+    public String Explination ;
+    public ArrayList<String> options;
+    public int Index;
 
-    void Question(int Index, String imageURL, String Question, String AnswerA,String AnswerB,String AnswerC,String AnswerD,String AnswerE, int CorrectAnswer, String Explination ) {
+    Question(){  }
+    /*
+    Question(int Index, String imageURL, String Question, String AnswerA,String AnswerB,String AnswerC,String AnswerD,String AnswerE, int CorrectAnswer, String Explination ) {
         this.imageURL = imageURL;
         this.Question = Question;
         this.AnswerA = AnswerA;
@@ -30,6 +33,7 @@ public class Question {
         this.Explination = Explination;
         this.Index = Index;
     }
+    */
 
     void makeAnswers(){
         options = new ArrayList<String>();

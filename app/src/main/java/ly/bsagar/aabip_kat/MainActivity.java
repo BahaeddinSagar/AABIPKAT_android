@@ -34,7 +34,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "FIREBASE DATABASE";
-    ArrayList<Question> ListOfQuestions;
+    public ArrayList<Question> ListOfQuestions;
     private StorageReference mStorageRef;
     static boolean calledAlready = false;
     static FirebaseDatabase database;
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    void getPermission(View view) {
+    public void getPermission(View view) {
 
         isExternalStorageWritable();
 
@@ -85,18 +85,22 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(DataSnapshot dataSnapshot) {
                 // This method is called once with the initial value and again
                 // whenever data at this location is updated.
+                Log.d("SnapShot", "Value is: " + dataSnapshot);
 
                 // making sure that the data exists
                 // boolean exist = dataSnapshot.exists();
                 ListOfQuestions.clear();
                 // looping through every question in snapshot
                 for (DataSnapshot question : dataSnapshot.getChildren()) {
+                    Log.d("SnapShot", "Value is: " + question);
                     // store question
                     Question q = question.getValue(Question.class);
                     // avoid null exception, make the "options" array which holds all of the answers
+
                     if (q != null) {
                         q.makeAnswers();
                     }
+
                     // add the question to the list of questions
                     ListOfQuestions.add(q);
                 }
@@ -138,7 +142,7 @@ public class MainActivity extends AppCompatActivity {
         } else {
             startActivity(Modules);
         }
-        //startActivity(Modules);
+
     }
 
 
@@ -176,6 +180,8 @@ public class MainActivity extends AppCompatActivity {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
             Log.v(TAG, "Permission: " + permissions[0] + "was " + grantResults[0]);
+
+
             //resume tasks needing this permission
             DownloadImages();
         }

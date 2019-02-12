@@ -35,7 +35,7 @@ public class AnswerActivity extends AppCompatActivity {
 
 
     void NextQuestion(View view){
-        QuestionActivity.QuestionNumber +=1;
+        QuestionActivity.QuestionIndex +=1;
         this.finish();
 
 
